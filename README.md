@@ -11,9 +11,9 @@
 
 ```bash
 # NPM
-npm install --save-dev roolup-plugin-bundle-analyzer
+npm install --save-dev rollup-plugin-bundle-analyzer
 # Yarn
-yarn add -D roolup-plugin-bundle-analyzer
+yarn add -D rollup-plugin-bundle-analyzer
 ```
 
 <h2 align="center">Usage (as a plugin)</h2>
