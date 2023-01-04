@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/webpack/webpack">
+  <a href="https://rollupjs.org/guide/en/">
     <img width="200" height="200"
       src="https://raw.githubusercontent.com/Jerry2023/rollup-plugin-bundle-analyzer/main/assets/log.png">
   </a>
@@ -50,12 +50,12 @@ bundleAnalyzer(options?: object)
 
 |Name|Type|Description|
 |:--:|:--:|:----------|
-|**`analyzerMode`**|One of: `server`, `static`, `json`, `disabled`|Default: `server`. In `server` mode analyzer will start HTTP server to show bundle report. In `static` mode single HTML file with bundle report will be generated. In `json` mode single JSON file with bundle report will be generated. In `disabled` mode you can use this plugin to just generate Webpack Stats JSON file by setting `generateStatsFile` to `true`. |
+|**`analyzerMode`**|One of: `server`, `static`, `json`, `disabled`|Default: `server`. In `server` mode analyzer will start HTTP server to show bundle report. In `static` mode single HTML file with bundle report will be generated. In `json` mode single JSON file with bundle report will be generated. In `disabled` mode you can use this plugin to just generate Stats JSON file by setting `generateStatsFile` to `true`. |
 |**`host`**|`{String}`|Default: `127.0.0.1`. Host that will be used in `server` mode to start HTTP server.|
 |**`port`**|`{Number}` or `auto`|Default: `9800`. Port that will be used in `server` mode to start HTTP server.|
-|**`reportFilename`**|`{String}`|Default: `report.html`. Path to bundle report file that will be generated in `static` mode. It can be either an absolute path or a path relative to a bundle output directory (which is output.path in webpack config).|
-|**`generateStatsFile`**|`{Boolean}`|Default: `false`. If `true`, webpack stats JSON file will be generated in bundle output directory|
-|**`statsFilename`**|`{String}`|Default: `stats.json`. Name of webpack stats JSON file that will be generated if `generateStatsFile` is `true`. It can be either an absolute path or a path relative to a bundle output directory (which is output.path in webpack config).|
+|**`reportFilename`**|`{String}`|Default: `report.html`. Path to bundle report file that will be generated in `static` mode. It can be either an absolute path or a path relative to a bundle output directory |
+|**`generateStatsFile`**|`{Boolean}`|Default: `false`. If `true`, rollup stats JSON file will be generated in bundle output directory|
+|**`statsFilename`**|`{String}`|Default: `stats.json`. Name of rollup stats JSON file that will be generated if `generateStatsFile` is `true`. It can be either an absolute path or a path relative to a bundle output directory |
 |**`excludeAssets`**|`{null\|pattern\|pattern[]}` where `pattern` equals to `{String\|RegExp\|function}`|Default: `null`. Patterns that will be used to match against asset names to exclude them from the report. If pattern is a string it will be converted to RegExp via `new RegExp(str)`. If pattern is a function it should have the following signature `(assetName: string) => boolean` and should return `true` to *exclude* matching asset. If multiple patterns are provided asset should match at least one of them to be excluded. |
 
 ### `input`
@@ -65,7 +65,7 @@ minification.
 
 ### `render`
 
-This is the "output" size of your files. If you're using a Webpack plugin such
+This is the "output" size of your files. If you're using a rollup plugin such
 as Uglify, then this value will reflect the minified size of your code.
 
 ### `gzip`
@@ -74,7 +74,7 @@ This is the size of running the parsed bundles/modules through gzip compression.
 
 <h2 align="center">Selecting Which Chunks to Display</h2>
 
-When opened, the report displays all of the Webpack chunks for your project. It's possible to filter to a more specific list of chunks by using the sidebar or the chunk context menu.
+When opened, the report displays all of the chunks for your project. It's possible to filter to a more specific list of chunks by using the sidebar or the chunk context menu.
 
 ### Sidebar
 
