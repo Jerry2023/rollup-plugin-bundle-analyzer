@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://github.com/webpack/webpack">
     <img width="200" height="200"
-      src="https://webpack.js.org/assets/icon-square-big.svg">
+      src="https://raw.githubusercontent.com/Jerry2023/rollup-plugin-bundle-analyzer/main/assets/log.png">
   </a>
   <h1>rollup Bundle Analyzer</h1>
   <p>Visualize size of rollup output files with an interactive zoomable treemap.</p>
@@ -62,9 +62,6 @@ bundleAnalyzer(options?: object)
 
 This is the "input" size of your files, before any transformations like
 minification.
-
-It is called "stat size" because it's obtained from Webpack's
-[stats object](https://webpack.js.org/configuration/stats/).
 
 ### `render`
 
