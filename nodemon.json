@@ -1,0 +1,16 @@
+{
+  "name": "plugin",
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "packages/**/dist/",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": false,
+  "execMap": { },
+  "watch": [
+    "packages/**/src/",
+    "packages/**/client/"
+  ],
+  "ext": "js, ts"
+}
