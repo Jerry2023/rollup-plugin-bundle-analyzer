@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-bundle-analyzer",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "publishConfig": {
     "access": "public"
   },
@@ -67,6 +67,7 @@
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.2"
   },
+  "repository": "https://github.com/Jerry2023/rollup-plugin-bundle-analyzer",
   "scripts": {
     "build:client": "webpack",
     "build-all": "pnpm run build:client & pnpm run build",
