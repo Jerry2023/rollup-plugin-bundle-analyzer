@@ -1,0 +1,10 @@
+.eslintrc.js
+**/dist
+**/node_modules
+**/public
+**/test/**/output
+packages/commonjs/test/fixtures
+packages/typescript/test/fixtures/syntax-error
+
+# temporary workaround for eslint bug where package.json is a directory
+packages/node-resolve/test/fixtures/package-json-in-path
