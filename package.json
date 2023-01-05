@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-bundle-analyzer",
-  "version": "1.6.4",
+  "version": "1.6.6",
   "publishConfig": {
     "access": "public"
   },
