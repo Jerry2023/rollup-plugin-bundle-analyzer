@@ -61,6 +61,7 @@
     "stream-combiner2": "1.1.1",
     "style-loader": "2.0.0",
     "terser-webpack-plugin": "5.1.2",
+    "tslib": "^2.4.1",
     "typescript": "^4.8.3",
     "url-loader": "4.1.1",
     "webpack": "5.37.1",
