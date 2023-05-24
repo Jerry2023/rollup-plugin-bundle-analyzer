@@ -3,7 +3,7 @@
     <img width="200" height="200"
       src="https://raw.githubusercontent.com/Jerry2023/rollup-plugin-bundle-analyzer/main/assets/log.png">
   </a>
-  <h1>rollup Bundle Analyzer</h1>
+  <h1>Rollup Bundle Analyzer</h1>
   <p>Visualize size of rollup output files with an interactive zoomable treemap.</p>
 </div>
 
